@@ -54,8 +54,12 @@ public class BookServiceImpl implements BookService {
         }
         // 设置总页码
         page.setPageTotal(pageTotal);
+
+
+
         // 设置当前页码
         page.setPageNo(pageNo);
+
         // 求当前页数据的开始索引
         int begin = (page.getPageNo() - 1) * pageSize;
         // 求当前页数据
